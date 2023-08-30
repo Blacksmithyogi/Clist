@@ -60,27 +60,6 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    /*binding.Listview.isClickable = true
-    binding.Listview.adapter = PomAdapter(this, userArraylist)
-    binding.Listview.setOnItemClickListener{parent, view, position, id ->
-
-        val pomName = pomName
-        val pomSummary = pomSummary[position]
-        val pomImage = pomImage[position]
-
-        val i = Intent(this, UserActivity::class.java)
-        i.putExtra("pomName", pomName)
-        i.putExtra("pomSummary", pomSummary)
-        i.putExtra("pomImage", pomImage)
-    androidx.compose.foundation.layout.Box {
-        startActivity(i)
-    }
-
-
-    } */
-
-
-
 
 
 
