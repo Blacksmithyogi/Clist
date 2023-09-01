@@ -5,6 +5,7 @@
     android:id="@+id/Listview">
 
     <RelativeLayout
+        android:background="@drawable/card_bot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -48,14 +49,14 @@
             </LinearLayout>
         </LinearLayout>
 
-            <ImageView
-                android:layout_centerVertical="true"
-                android:id="@+id/pom_Arrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/baseline_arrow_forward_ios_24" />
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/pom_Arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/baseline_arrow_forward_ios_24" />
 
     </RelativeLayout>
 </LinearLayout>

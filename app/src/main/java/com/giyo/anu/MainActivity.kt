@@ -1,9 +1,11 @@
 package com.giyo.anu
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.giyo.anu.databinding.ActivityMainBinding
+
 
 @Suppress("UNUSED_EXPRESSION")
 class MainActivity : AppCompatActivity() {
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         )
 
 
+
         userArraylist = ArrayList()
 
         for (i in pomName.indices) {
@@ -39,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.Listview.isClickable = true
-        binding.Listview.adapter = PomAdapter(this, userArraylist)
+        binding.Listview.adapter = PomAdapter(this, userArraylist, 0)
         binding.Listview.setOnItemClickListener { parent, view, position, id ->
             val pName = pomName[position]
             val pSummary = pomSummary[position]
