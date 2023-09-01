@@ -18,8 +18,6 @@ class PomAdapter(
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view = convertView ?: createView(parent, position)
-        /*val inflater: LayoutInflater = LayoutInflater.from(context)
-        val view: View = inflater.inflate(R.layout.list_item, null)*/
 
         val imageView: ImageView = view.findViewById(R.id.pom_ava)
         val pName: TextView = view.findViewById(R.id.pom_title)
@@ -28,16 +26,6 @@ class PomAdapter(
         imageView.setImageResource(arrayList[position].pomImage)
         pName.text = arrayList[position].pomName
         pSummary.text = arrayList[position].pomSummary
-        /*if (position == 0) {
-            view.setBackgroundResource(R.drawable.card_top)
-        } else if (position > 0) {
-            view.setBackgroundResource(R.drawable.card_middle)
-        }
-
-        // Check if it's the last item and set a specific color
-        if (position == lastPosition) {
-            view.setBackgroundResource(R.drawable.card_bot) // Change to your desired color
-        }*/
 
         return view
 
